@@ -7,6 +7,8 @@ function createSMSing4ApartmentService (execlib) {
 
   function ServiceMixin () {
   }
+  ServiceMixin.prototype.destroy = function (sinkname) {
+  };
 
   function genericSendSMSThruHotel (sinkname) {
     var methodname = 'sendSMSVia'+sinkname;
